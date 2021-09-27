@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+  <title>3D Portfolio</title>
+  <style>
+    @import url("https://use.typekit.net/jmk3xov.css");
+    @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+    body {
+      margin: 0;
+    }
+
+    html,
+    body {
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+
+    canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+
+
+    :root {
+      --dark-bg: rgba(15, 15, 15, 0.95);
+      --spacing: 350px;
+
+      font-family: brandon-grotesque, sans-serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+
+    main,
+    nav {
+      width: 100vw;
+      color: white;
+      z-index: 98;
+      position: absolute;
+      width: 100%;
+      margin: 0px auto;
+      padding: 120px 0px;
+
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+    }
+
+    h1,
+    h2,
+    h3,
+    blockquote {
+      font-family: elevon, sans-serif;
+      font-weight: 700;
+      font-style: normal;
+    }
+
+    canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+
+
+
+    header {
+      background: var(--dark-bg);
+      grid-column: 2 / span 5;
+      font-size: 2.5rem;
+      padding: 2rem;
+      margin-bottom: var(--spacing);
+    }
+
+    section {
+      grid-column: 2 / 8;
+      padding: 1rem;
+      background: var(--dark-bg);
+      font-size: 1.25rem;
+      line-height: 1.5;
+      margin-bottom: var(--spacing);
+    }
+
+    blockquote {
+      margin: 0;
+      padding: 0;
+      grid-column: 2 / span 9;
+      margin-bottom: var(--spacing);
+    }
+
+    blockquote p {
+      color: black;
+      background-color: white;
+      font-size: 4rem;
+      display: inline;
+      line-height: 1;
+    }
+
+    .left {
+      grid-column: 6 / 12;
+    }
+
+    /* Nav bar at the top of the website */
+    div#topBar {
+      z-index: 99;
+      color: cyan;
+      position: absolute;
+      /* display: grid; */
+      display: none;
+      place-items: center;
+      width: 100%;
+      background-color: black;
+      font-family: Oswald, sans-serif;
+    }
+
+    li.topBar {
+      display: inline;
+    }
+
+    a.topBar {
+      color: inherit;
+      font-size: inherit;
+      font-family: inherit;
+      text-decoration: inherit;
+    }
+
+    a {
+      color: aqua;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="topBar">
+    <ul>
+      <li class="topBar"><a class="topBar" href="#">Modi.</a>!</li>
+      <li class="topBar"><a class="topBar" href="#">&nbsp;&nbsp;&nbsp; Iusto.</a></li>
+    </ul>
+  </div>
+
+
+  <!-- ? https://threejs.org/docs -->
+  <!-- * https://vitejs.dev/guide/features.html -->
+
+  <canvas id="bg"></canvas>
+
+
+  <main>
+
+    <header>
+      <h1>Melvin SS</h1>
+      <p>🚀 Welcome to my website!</p>
+    </header>
+
+
+    <blockquote>
+      <!-- <p>I like making stuff and putting it on the internet</p> -->
+      <p>I want to learn and work across many technologies</p>
+    </blockquote>
+
+    <section>
+      <h2>📜 Manifesto</h2>
+      <p>
+        I am very self-driven, curious person with an open mind, who's always seeking to learn and work across as many
+        technologies and domains as I can 💡.
+        My ambition has always been to create any kind of application that I want at any given time.
+      </p>
+
+      <p>
+        My hobby is all about learning new programming languages and improving the ones I already know.
+        I also love to help people with their problems especially with Python 🐍. It's my favorite language of all time
+        together with JavaScript!
+      </p>
+
+      <p>
+        Personally when things get stressful, I like to take a good sleep 🛌.
+      </p>
+
+
+    </section>
+
+    <section class="light">
+      <h2>👩🏽‍🚀 Projects</h2>
+
+      <p>
+        Most of my projects are on my <a href="https://github.com/MoofyWoofy">GitHub</a>, check them out!
+        <br>
+        I use <a href="https://codepen.io/MoofyWoofy">CodePen</a> for simple projects related to HTML, CSS and JS.
+      </p>
+
+      <h2>🏆 Accomplishments</h2>
+
+      <p>
+        I am fluent in Python, C#, JavaScript.
+        This website was created with HTML CSS JavaScript, ThreeJS to be specific.
+      </p>
+
+    </section>
+
+    <blockquote>
+      <p>
+        Discovering the unexpected is more important than confirming the known.
+        <br>
+        ― George Box
+      </p>
+    </blockquote>
+
+    <section class="left">
+      <h2>🌮 Work History</h2>
+
+      <h3>
+        Nothing ever becomes real 'til it is experienced.
+        <br>
+        ― John Keats
+      </h3>
+
+      <!-- <h3>McDonalds</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.
+      </p>
+      <h3>Burger King</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.
+      </p> -->
+
+
+
+    </section>
+
+    <blockquote>
+      <!-- <p>Thanks for <del>watching!</del></p> -->
+      <p style="color: white;background-color: transparent;">Thank you for visiting! 😃</p>
+      <!-- <br><br> -->
+      <!-- <author> ― Melvin</author> -->
+    </blockquote>
+
+
+  </main>
+
+
+  <script type="module" src="/space.js"></script>
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/16.3.5/Tween.min.js"></script>
+</body>
+
+</html>
