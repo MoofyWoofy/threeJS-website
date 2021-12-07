@@ -1,0 +1,29 @@
+# node_modules
+# .DS_Store
+# dist
+# dist-ssr
+# *.local
+
+
+# Ignore everything
+*
+# But descend into directories
+!*/
+
+# Recursively allow files under subtree
+!/animations/rocket/**
+!/images/planets/**
+/node_modules/**
+
+
+!README.md
+!index.html
+!space.js
+!favicon.svg
+!.gitignore
+!package.json
+!package-lock.json
+!style.css
+
+
+# gitignore whitelisting patterns

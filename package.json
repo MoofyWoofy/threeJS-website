@@ -1,0 +1,16 @@
+{
+  "name": "threejs_project",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "dev-host": "vite --host",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^2.4.4"
+  },
+  "dependencies": {
+    "three": "^0.131.3"
+  }
+}
